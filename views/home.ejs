@@ -1,0 +1,25 @@
+<%- include("partials/header") -%>
+
+<img src="weathericon.png" alt="weather" height="200px" width="200px">
+
+<h2>Welcome to my exciting weather app!</h2>
+<h5>I mean, weather is what we all love to small talk about, right?</h5>
+<p class="lead"> Find out the current weather in any place in the world by searching in the box below.
+   <br> That way, you can have something interesting to talk about with anyone!
+</p>
+<p class="lead">
+    <form action="/" method="post">
+        <label for="cityInput" class="form-label">Search city:</label>
+        <br>
+        <input id="cityInput" type="text" class="form-label" name="cityName" value="">
+        <br>
+        <div class="d-grid gap-2 col-1 mx-auto">
+        <button type="submit" class="btn btn-sm btn-dark">Go</button>
+    </div>
+    </form>
+  
+</p>
+
+
+
+<%- include("partials/footer.ejs") -%> 

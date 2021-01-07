@@ -1,0 +1,22 @@
+<%- include("partials/header") -%>
+
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+        </nav>
+      </div>
+    </header>
+  
+    <main class="px-3">
+      <img src=" <%= imgURL %> " alt="current weather">
+      <p class="lead"> The current weather in <%= query %> is <%= description %>.</p>
+      <p class="lead">The temperature is <%= temp %> degrees Celsius.</p>
+      <p class="text-secondary"><em>Do you want to search for the current weather in another city? 
+       <br> Press the button below</em> </p>
+      
+
+      <a class="btn btn-sm btn-dark" href="/" role="button">New search</a>
+      
+<%- include("partials/footer.ejs") -%> 
